@@ -13,6 +13,7 @@
 		1CE7AAA21AB7EBE500C24598 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE7AAA11AB7EBE500C24598 /* Images.xcassets */; };
 		1CE7AAB11AB7EBE500C24598 /* CustomTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7AAB01AB7EBE500C24598 /* CustomTransitionTests.m */; };
 		1CE7AABC1AB8087F00C24598 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7AABB1AB8087F00C24598 /* MainViewController.m */; };
+		1CE7AABF1AB82FD500C24598 /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7AABE1AB82FD500C24598 /* OptionsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 		1CE7AAB01AB7EBE500C24598 /* CustomTransitionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTransitionTests.m; sourceTree = "<group>"; };
 		1CE7AABA1AB8087F00C24598 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		1CE7AABB1AB8087F00C24598 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		1CE7AABD1AB82FD500C24598 /* OptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
+		1CE7AABE1AB82FD500C24598 /* OptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 				1CE7AA981AB7EBE500C24598 /* AppDelegate.h */,
 				1CE7AA991AB7EBE500C24598 /* AppDelegate.m */,
 				1CE7AA9E1AB7EBE500C24598 /* Main.storyboard */,
+				1CE7AABD1AB82FD500C24598 /* OptionsViewController.h */,
+				1CE7AABE1AB82FD500C24598 /* OptionsViewController.m */,
 				1CE7AABA1AB8087F00C24598 /* MainViewController.h */,
 				1CE7AABB1AB8087F00C24598 /* MainViewController.m */,
 				1CE7AAA11AB7EBE500C24598 /* Images.xcassets */,
@@ -216,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CE7AA9A1AB7EBE500C24598 /* AppDelegate.m in Sources */,
+				1CE7AABF1AB82FD500C24598 /* OptionsViewController.m in Sources */,
 				1CE7AABC1AB8087F00C24598 /* MainViewController.m in Sources */,
 				1CE7AA971AB7EBE500C24598 /* main.m in Sources */,
 			);

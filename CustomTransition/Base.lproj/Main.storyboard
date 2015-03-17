@@ -20,7 +20,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ijf-Cd-Owc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="230" y="408"/>
+            <point key="canvasLocation" x="212" y="118"/>
         </scene>
         <!--Custom Transitions-->
         <scene sceneID="f7z-r7-x2E">
@@ -44,12 +44,72 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Custom Transitions" id="pjn-rD-cf5">
-                        <barButtonItem key="rightBarButtonItem" title="Options" id="Wrv-mr-lpH"/>
+                        <barButtonItem key="rightBarButtonItem" title="Options" id="Wrv-mr-lpH">
+                            <connections>
+                                <segue destination="v3h-9J-igT" kind="presentation" id="krB-8R-t3E"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kfo-nu-n6P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="925" y="408"/>
+            <point key="canvasLocation" x="881" y="118"/>
+        </scene>
+        <!--Options View Controller-->
+        <scene sceneID="8jw-Ue-4ZX">
+            <objects>
+                <viewController id="v3h-9J-igT" customClass="OptionsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vOx-mD-b2X"/>
+                        <viewControllerLayoutGuide type="bottom" id="91t-ss-PlO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HHL-Ce-tnt">
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zKX-dV-blC">
+                                <rect key="frame" x="0.0" y="60" width="600" height="540"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yZ-GU-qZJ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ob5-kn-ggS"/>
+                                    <constraint firstAttribute="height" constant="60" id="duI-TH-RMh"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Options" id="PYD-ie-bph">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="hS6-eh-bFc"/>
+                                    </navigationItem>
+                                </items>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ob5-kn-ggS"/>
+                                    </mask>
+                                </variation>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zKX-dV-blC" firstAttribute="top" secondItem="0yZ-GU-qZJ" secondAttribute="bottom" id="1gY-1s-sTT"/>
+                            <constraint firstItem="zKX-dV-blC" firstAttribute="top" secondItem="0yZ-GU-qZJ" secondAttribute="bottom" id="8Xf-ws-UeQ"/>
+                            <constraint firstItem="0yZ-GU-qZJ" firstAttribute="leading" secondItem="HHL-Ce-tnt" secondAttribute="leading" id="PXE-3n-Zzs"/>
+                            <constraint firstItem="91t-ss-PlO" firstAttribute="top" secondItem="zKX-dV-blC" secondAttribute="bottom" id="TpI-kv-yNU"/>
+                            <constraint firstAttribute="trailing" secondItem="0yZ-GU-qZJ" secondAttribute="trailing" id="VnG-Qk-GoY"/>
+                            <constraint firstItem="0yZ-GU-qZJ" firstAttribute="top" secondItem="HHL-Ce-tnt" secondAttribute="top" id="WHz-iP-a47"/>
+                            <constraint firstItem="zKX-dV-blC" firstAttribute="leading" secondItem="HHL-Ce-tnt" secondAttribute="leading" id="YU6-kt-RUL"/>
+                            <constraint firstAttribute="trailing" secondItem="zKX-dV-blC" secondAttribute="trailing" id="xVc-zu-XYn"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8Xf-ws-UeQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ygx-PZ-Ugn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1572" y="-264"/>
         </scene>
     </scenes>
 </document>
