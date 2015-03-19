@@ -8,10 +8,13 @@
 
 #import "MainViewController.h"
 #import "OptionsViewController.h"
+#import "ImageViewController.h"
+#import "CollectionViewController.h"
 
 @interface MainViewController ()
 
 @property (nonatomic, strong) NSArray *cellTitle;
+@property (nonatomic, strong) NSArray *cellAction;
 
 @end
 
@@ -21,6 +24,13 @@
     [super viewDidLoad];
     
     self.cellTitle = @[@"Image View", @"Collection View"];
+    self.cellAction = @[@"presentImageController", @"presentCollectionController"];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,8 +55,28 @@
     return cell;
 }
 
--(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
     return @"Tap Options for different animations and other settings.";
+}
+
+#pragma mark - Table view delegate
+
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    SEL selector = NSSelectorFromString(self.cellAction[indexPath.row]);
+    
+    if ([self respondsToSelector:selector]) {
+        [self performSelector:selector];
+    }
+}
+
+#pragma mark - Custom Methods
+
+- (void)presentImageController {
+    ImageViewController *imgVC = [[ImageViewController alloc] init];
+    imgVC.title = @"Apple";
+    [self.navigationController pushViewController:imgVC animated:YES];
 }
 
 /*

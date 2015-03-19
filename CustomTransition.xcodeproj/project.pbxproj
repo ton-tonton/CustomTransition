@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CDF34D11ABAD067006136F3 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDF34D01ABAD067006136F3 /* ImageViewController.m */; };
+		1CDF34D41ABAD082006136F3 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDF34D31ABAD082006136F3 /* CollectionViewController.m */; };
 		1CE7AA971AB7EBE500C24598 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7AA961AB7EBE500C24598 /* main.m */; };
 		1CE7AA9A1AB7EBE500C24598 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7AA991AB7EBE500C24598 /* AppDelegate.m */; };
 		1CE7AAA01AB7EBE500C24598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE7AA9E1AB7EBE500C24598 /* Main.storyboard */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CDF34CF1ABAD067006136F3 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		1CDF34D01ABAD067006136F3 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		1CDF34D21ABAD082006136F3 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		1CDF34D31ABAD082006136F3 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		1CE7AA911AB7EBE500C24598 /* CustomTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE7AA951AB7EBE500C24598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CE7AA961AB7EBE500C24598 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +95,10 @@
 				1CE7AABE1AB82FD500C24598 /* OptionsViewController.m */,
 				1CE7AABA1AB8087F00C24598 /* MainViewController.h */,
 				1CE7AABB1AB8087F00C24598 /* MainViewController.m */,
+				1CDF34CF1ABAD067006136F3 /* ImageViewController.h */,
+				1CDF34D01ABAD067006136F3 /* ImageViewController.m */,
+				1CDF34D21ABAD082006136F3 /* CollectionViewController.h */,
+				1CDF34D31ABAD082006136F3 /* CollectionViewController.m */,
 				1CE7AAA11AB7EBE500C24598 /* Images.xcassets */,
 				1CE7AA941AB7EBE500C24598 /* Supporting Files */,
 			);
@@ -220,7 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CDF34D11ABAD067006136F3 /* ImageViewController.m in Sources */,
 				1CE7AA9A1AB7EBE500C24598 /* AppDelegate.m in Sources */,
+				1CDF34D41ABAD082006136F3 /* CollectionViewController.m in Sources */,
 				1CE7AABF1AB82FD500C24598 /* OptionsViewController.m in Sources */,
 				1CE7AABC1AB8087F00C24598 /* MainViewController.m in Sources */,
 				1CE7AA971AB7EBE500C24598 /* main.m in Sources */,
@@ -408,6 +420,7 @@
 				1CE7AAB61AB7EBE500C24598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1CE7AAB71AB7EBE500C24598 /* Build configuration list for PBXNativeTarget "CustomTransitionTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +429,7 @@
 				1CE7AAB91AB7EBE500C24598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
