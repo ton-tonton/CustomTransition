@@ -79,6 +79,14 @@
     [self.navigationController pushViewController:imgVC animated:YES];
 }
 
+- (void)presentCollectionController {
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    flowLayout.itemSize = CGSizeMake(80.0, 80.0);
+    CollectionViewController *collecVC = [[CollectionViewController alloc] initWithCollectionViewLayout:flowLayout];
+    collecVC.title = @"Apples";
+    [self.navigationController pushViewController:collecVC animated:YES];
+}
+
 /*
 #pragma mark - Navigation
 
