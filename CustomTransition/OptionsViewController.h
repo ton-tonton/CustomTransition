@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OptionsViewController : UIViewController
+#define USER_DEFAULTS_CUSTOM_TRANSITIONS @"CustomTransitionsEnabled"
+#define USER_DEFAULTS_NAVIGATION_TRANSITION @"NavigationTransition"
+#define USER_DEFAULTS_NAVIGATION_TRANSITION_SLIDE @"NavigationSlide"
+#define USER_DEFAULTS_NAVIGATION_TRANSITION_FLIP @"NavigationFlip"
+#define USER_DEFAULTS_NAVIGATION_TRANSITION_SCALE @"NavigationScale"
+
+@interface OptionsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UIView *contentView;
 
 @end

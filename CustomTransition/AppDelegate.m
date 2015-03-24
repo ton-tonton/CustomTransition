@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "OptionsViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [[NSUserDefaults standardUserDefaults] setBool:YES
+                                            forKey:USER_DEFAULTS_CUSTOM_TRANSITIONS];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:USER_DEFAULTS_NAVIGATION_TRANSITION_SLIDE
+                                              forKey:USER_DEFAULTS_NAVIGATION_TRANSITION];
+    
     return YES;
 }
 
