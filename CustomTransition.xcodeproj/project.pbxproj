@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C03C97D1AC2B2DB003AC334 /* ModalAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C03C97C1AC2B2DB003AC334 /* ModalAnimation.m */; };
+		1C03C9811AC2B346003AC334 /* BaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C03C9801AC2B346003AC334 /* BaseAnimation.m */; };
+		1C03C9831AC2B5C9003AC334 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C03C9821AC2B5C9003AC334 /* UIKit.framework */; };
+		1C03C9851AC2B5E0003AC334 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C03C9841AC2B5E0003AC334 /* CoreGraphics.framework */; };
+		1C03C9881AC2B62B003AC334 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C03C9871AC2B62B003AC334 /* Foundation.framework */; };
 		1CDF34D11ABAD067006136F3 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDF34D01ABAD067006136F3 /* ImageViewController.m */; };
 		1CDF34D41ABAD082006136F3 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDF34D31ABAD082006136F3 /* CollectionViewController.m */; };
 		1CE7AA971AB7EBE500C24598 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7AA961AB7EBE500C24598 /* main.m */; };
@@ -29,6 +34,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C03C97B1AC2B2DB003AC334 /* ModalAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalAnimation.h; sourceTree = "<group>"; };
+		1C03C97C1AC2B2DB003AC334 /* ModalAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalAnimation.m; sourceTree = "<group>"; };
+		1C03C97F1AC2B346003AC334 /* BaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAnimation.h; sourceTree = "<group>"; };
+		1C03C9801AC2B346003AC334 /* BaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAnimation.m; sourceTree = "<group>"; };
+		1C03C9821AC2B5C9003AC334 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1C03C9841AC2B5E0003AC334 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1C03C9871AC2B62B003AC334 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1C03C98C1AC2BDBE003AC334 /* CustomTransition-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CustomTransition-Prefix.pch"; sourceTree = "<group>"; };
 		1CDF34CF1ABAD067006136F3 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		1CDF34D01ABAD067006136F3 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		1CDF34D21ABAD082006136F3 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
@@ -54,6 +67,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C03C9881AC2B62B003AC334 /* Foundation.framework in Frameworks */,
+				1C03C9851AC2B5E0003AC334 /* CoreGraphics.framework in Frameworks */,
+				1C03C9831AC2B5C9003AC334 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,11 +83,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C03C97E1AC2B312003AC334 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				1C03C97F1AC2B346003AC334 /* BaseAnimation.h */,
+				1C03C9801AC2B346003AC334 /* BaseAnimation.m */,
+				1C03C97B1AC2B2DB003AC334 /* ModalAnimation.h */,
+				1C03C97C1AC2B2DB003AC334 /* ModalAnimation.m */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
+		1C03C9861AC2B5EF003AC334 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C03C9871AC2B62B003AC334 /* Foundation.framework */,
+				1C03C9841AC2B5E0003AC334 /* CoreGraphics.framework */,
+				1C03C9821AC2B5C9003AC334 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1CE7AA881AB7EBE500C24598 = {
 			isa = PBXGroup;
 			children = (
 				1CE7AA931AB7EBE500C24598 /* CustomTransition */,
 				1CE7AAAD1AB7EBE500C24598 /* CustomTransitionTests */,
+				1C03C9861AC2B5EF003AC334 /* Frameworks */,
 				1CE7AA921AB7EBE500C24598 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,6 +133,7 @@
 				1CE7AABE1AB82FD500C24598 /* OptionsViewController.m */,
 				1CE7AABA1AB8087F00C24598 /* MainViewController.h */,
 				1CE7AABB1AB8087F00C24598 /* MainViewController.m */,
+				1C03C97E1AC2B312003AC334 /* Animations */,
 				1CDF34CF1ABAD067006136F3 /* ImageViewController.h */,
 				1CDF34D01ABAD067006136F3 /* ImageViewController.m */,
 				1CDF34D21ABAD082006136F3 /* CollectionViewController.h */,
@@ -110,6 +149,7 @@
 			children = (
 				1CE7AA951AB7EBE500C24598 /* Info.plist */,
 				1CE7AA961AB7EBE500C24598 /* main.m */,
+				1C03C98C1AC2BDBE003AC334 /* CustomTransition-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -231,9 +271,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CDF34D11ABAD067006136F3 /* ImageViewController.m in Sources */,
+				1C03C97D1AC2B2DB003AC334 /* ModalAnimation.m in Sources */,
 				1CE7AA9A1AB7EBE500C24598 /* AppDelegate.m in Sources */,
 				1CDF34D41ABAD082006136F3 /* CollectionViewController.m in Sources */,
 				1CE7AABF1AB82FD500C24598 /* OptionsViewController.m in Sources */,
+				1C03C9811AC2B346003AC334 /* BaseAnimation.m in Sources */,
 				1CE7AABC1AB8087F00C24598 /* MainViewController.m in Sources */,
 				1CE7AA971AB7EBE500C24598 /* main.m in Sources */,
 			);
@@ -350,6 +392,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomTransition/CustomTransition-Prefix.pch";
 				INFOPLIST_FILE = CustomTransition/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,6 +405,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomTransition/CustomTransition-Prefix.pch";
 				INFOPLIST_FILE = CustomTransition/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

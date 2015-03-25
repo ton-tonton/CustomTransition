@@ -87,6 +87,9 @@
     [self.navigationController pushViewController:collecVC animated:YES];
 }
 
+#pragma mark - transitioning delegate (modal)
+
+
 
 #pragma mark - Navigation
 /*
